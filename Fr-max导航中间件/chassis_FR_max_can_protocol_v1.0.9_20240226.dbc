@@ -1,0 +1,482 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: AUTO VCU
+VAL_TABLE_ Veh_fb_EHBStrokeErr 1 "EHB行程超差" 0 "正常" ;
+VAL_TABLE_ Veh_fb_EHBOilPreErr 1 "EHB油压系统故障" 0 "正常" ;
+VAL_TABLE_ Brake_AngleSet 1 "EHB角度调整模式" 0 "关闭" ;
+VAL_TABLE_ Brake_Reset 1 "EHB置零点" 0 "关闭" ;
+VAL_TABLE_ Close_canDiag 1 "关闭CAN诊断" 0 "关闭" ;
+VAL_TABLE_ steer_reset 1 "EPS置零点" 0 "关闭" ;
+VAL_TABLE_ Brake_AngleSet 1 "EHB角度调整模式" 0 "关闭" ;
+VAL_TABLE_ Brake_Reset 1 "EHB置零点" 0 "关闭" ;
+VAL_TABLE_ Close_canDiag 1 "关闭CAN诊断" 0 "关闭" ;
+VAL_TABLE_ steer_reset 1 "EPS置零点" 0 "关闭" ;
+VAL_TABLE_ Veh_fb_EHBOilErr 1 "EHB 工作模式错误" 0 "正常" ;
+VAL_TABLE_ Veh_fb_EHBEcuOverTempErr 1 "EHB 控制器过温" 0 "正常" ;
+VAL_TABLE_ Veh_fb_EHBEcuUnderVoltErr 1 "控制器电压低" 0 "正常" ;
+VAL_TABLE_ Veh_fb_EHBCANErr 1 "EHB CAN通讯故障" 0 "正常" ;
+VAL_TABLE_ Veh_fb_EHBEcuOverVoltErr 1 "EHB 控制器电压高" 0 "正常" ;
+VAL_TABLE_ Veh_fb_EHBPreSensorErr 1 "EHB角度传感器可信度异常" 0 "正常" ;
+VAL_TABLE_ Veh_fb_EHBFSEBStrMtrErr 1 "EHB 电机故障" 0 "正常" ;
+VAL_TABLE_ Veh_fb_EHBAngleAlignmErr 1 "EHB 对中故障" 0 "正常" ;
+VAL_TABLE_ Veh_fb_EHBAngleSensorErr 1 "角度传感器故障" 0 "正常" ;
+VAL_TABLE_ Veh_fb_EHBDisEn 1 "EHB未使能故障" 0 "正常" ;
+VAL_TABLE_ Veh_fb_EHBModelErr 1 "EHB运行模式故障" 0 "正常" ;
+VAL_TABLE_ Veh_fb_EPSOverCurrent 1 "EPS超流故障" 0 "正常" ;
+VAL_TABLE_ Veh_fb_EPSDisWork 1 "EPS工作模式错误" 0 "正常" ;
+VAL_TABLE_ Veh_fb_EPSWarning 1 "EPS报警故障" 0 "正常" ;
+VAL_TABLE_ Veh_fb_AuxRemoteDisOnline 1 "遥控器接收机掉线" 0 "正常" ;
+VAL_TABLE_ Veh_fb_AuxRemoteClose 1 "遥控器关闭警告" 0 "正常" ;
+VAL_TABLE_ Veh_fb_AUXBMSDisOnline 1 "BMS CAN通信掉线故障" 0 "正常" ;
+VAL_TABLE_ Veh_fb_DrvMCUFaultFb 38 "行走驱动器欠压限功率" 37 "行走驱动器超载限制" 36 "行走驱动器超功率限制" 35 "行走驱动电机超转速限制" 34 "行走电机超温限制" 33 "行走驱动电机超流限制" 32 "行走驱动器超温限制" 31 "行走电机编码器异常限功率" 30 "行走驱动器母线电流传感器异常" 29 "行走驱动器母线电流限功率" 28 "母线电流传感器异常限功率" 27 "电磁抱闸超流故障" 26 "电磁抱闸开路故障" 25 "行走驱动器上电故障" 24 "行走驱动器缺相故障" 23 "行走驱动器通信故障" 22 "行走驱动器预充故障" 21 "行走电机失控故障" 20 "行走驱动器母线电流传感器故障" 19 "行走驱动器相电流传感器故障" 18 "行走驱动电机堵转故障" 17 "行走驱动电机编码器故障" 16 "行走驱动器温度传感器故障" 15 "行走电机温度传感器故障" 14 "行走驱动器超温故障" 13 "行走电机超温故障" 12 "行走驱动器超载故障" 11 "行走电机超载故障" 10 "行走电机超速故障" 9 "行走驱动器母线欠压" 8 "行走驱动器母线超压" 7 "行走驱动器母线超流" 6 "行走驱动器功率模块故障" 5 "行走驱动器硬件超流" 4 "行走驱动器W相超流故障" 3 "行走驱动器V相超流故障" 2 "行走驱动器U相超流故障" 1 "行走驱动器CAN通信信号掉线" 0 "正常" ;
+VAL_TABLE_ Veh_fb_AutoIOCANCmd 1 "Auto IO控制CAN通信错误" 0 "正常" ;
+VAL_TABLE_ Veh_fb_AutoCANCtrlCmd 1 "Auto控制CAN通信错误" 0 "正常" ;
+VAL_TABLE_ Veh_fb_AuxScram 1 "急停拍下" 0 "正常" ;
+VAL_TABLE_ Veh_fb_EHBDisOnline 1 "EHB掉线故障" 0 "正常" ;
+VAL_TABLE_ Veh_fb_EHBDomainDriveErr 1 "EHB域驱故障" 0 "正常" ;
+VAL_TABLE_ Veh_fb_EPSMosfetOT 1 "EPS MOSFET过温" 0 "正常" ;
+VAL_TABLE_ Veh_fb_EPSfault 1 "EPS故障" 0 "正常" ;
+VAL_TABLE_ Veh_fb_EPSDisOnline 1 "EPS掉线故障" 0 "正常" ;
+VAL_TABLE_ Veh_fb_FaultLevel 3 "严重故障" 2 "中度故障" 1 "轻微故障" 0 "正常" ;
+VAL_TABLE_ bms_flag_Infor_charge_flag 1 "充电中" 0 "未充电" ;
+VAL_TABLE_ bms_flag_Infor_lock_mos 1 "软件锁定 MOS" 0 "正常" ;
+VAL_TABLE_ bms_flag_Infor_ic_error 1 "前端检测 IC 错误" 0 "正常" ;
+VAL_TABLE_ bms_flag_Infor_short 1 "短路保护" 0 "正常" ;
+VAL_TABLE_ bms_flag_Infor_discharge_oc 1 "放电过流保护" 0 "正常" ;
+VAL_TABLE_ bms_flag_Infor_charge_oc 1 "充电过流保护" 0 "正常" ;
+VAL_TABLE_ bms_flag_Infor_discharge_ut 1 "放电低温保护" 0 "正常" ;
+VAL_TABLE_ bms_flag_Infor_discharge_ot 1 "放电过温保护" 0 "正常" ;
+VAL_TABLE_ bms_flag_Infor_charge_ut 1 "充电低温保护" 0 "正常" ;
+VAL_TABLE_ bms_flag_Infor_charge_ot 1 "充电过温保护" 0 "正常" ;
+VAL_TABLE_ bms_flag_Infor_uv 1 "整组欠压保护" 0 "正常" ;
+VAL_TABLE_ bms_flag_Infor_ov 1 "整组过压保护" 0 "正常" ;
+VAL_TABLE_ bms_flag_Infor_single_uv 1 "单体欠压保护" 0 "正常" ;
+VAL_TABLE_ bms_flag_Infor_single_ov 1 "单体过压保护" 0 "正常" ;
+VAL_TABLE_ io_fb_rr_drop_sensor 1 "触发" 0 "未触发" ;
+VAL_TABLE_ io_fb_rm_drop_sensor 1 "触发" 0 "未触发" ;
+VAL_TABLE_ io_fb_rl_drop_sensor 1 "触发" 0 "未触发" ;
+VAL_TABLE_ io_fb_fr_drop_sensor 1 "触发" 0 "未触发" ;
+VAL_TABLE_ io_fb_fm_drop_sensor 1 "触发" 0 "未触发" ;
+VAL_TABLE_ io_fb_fl_drop_sensor 1 "触发" 0 "未触发" ;
+VAL_TABLE_ io_fb_rr_impact_sensor 1 "触发" 0 "未触发" ;
+VAL_TABLE_ io_fb_rm_impact_sensor 1 "触发" 0 "未触发" ;
+VAL_TABLE_ io_fb_rl_impact_sensor 1 "触发" 0 "未触发" ;
+VAL_TABLE_ io_fb_fr_impact_sensor 1 "触发" 0 "未触发" ;
+VAL_TABLE_ io_fb_fm_impact_sensor 1 "触发" 0 "未触发" ;
+VAL_TABLE_ io_fb_fl_impact_sensor 1 "触发" 0 "未触发" ;
+VAL_TABLE_ io_fb_speaker 1 "打开" 0 "关闭" ;
+VAL_TABLE_ io_fb_fog_lamp 1 "雾灯打开" 0 "关闭" ;
+VAL_TABLE_ io_fb_clearance_lamp 1 "示廓灯打开" 0 "关闭" ;
+VAL_TABLE_ io_fb_turn_lamp 2 "开启右转向灯" 1 "开启左转向灯" 0 "关闭" ;
+VAL_TABLE_ io_fb_upper_beam_headlamp 1 "远光灯打开" 0 "关闭" ;
+VAL_TABLE_ io_fb_lower_beam_headlamp 1 "近光灯打开" 0 "关闭" ;
+VAL_TABLE_ io_fb_enable 1 "打开" 0 "关闭" ;
+VAL_TABLE_ ctrl_fb_mode 2 "自动驾驶和遥控器均不控制" 1 "遥控器控制模式" 0 "自动驾驶控制模式" ;
+VAL_TABLE_ ctrl_fb_gear 4 "D档" 3 "N档" 2 "R档" 1 "P档" 0 "预留" ;
+VAL_TABLE_ io_cmd_disCharge 1 "充电强制上电使能" 0 "关闭" ;
+VAL_TABLE_ io_cmd_speaker 1 "打开" 0 "关闭" ;
+VAL_TABLE_ io_cmd_fog_lamp 1 "雾灯打开" 0 "关闭" ;
+VAL_TABLE_ io_cmd_clearance_lamp 1 "示廓灯打开" 0 "关闭" ;
+VAL_TABLE_ io_cmd_braking_lamp 1 "制动灯打开" 0 "关闭" ;
+VAL_TABLE_ io_cmd_turn_lamp 2 "开启右转向灯" 1 "开启左转向灯" 0 "关闭" ;
+VAL_TABLE_ io_cmd_upper_beam_headlamp 1 "远光灯打开" 0 "关闭" ;
+VAL_TABLE_ io_cmd_lower_beam_headlamp 1 "近光灯打开" 0 "关闭" ;
+VAL_TABLE_ io_cmd_enable 1 "I/O控制使能" 0 "关闭" ;
+VAL_TABLE_ ctrl_cmd_gear 4 "D档" 3 "N档" 2 "R档" 1 "P档" 0 "预留" ;
+VAL_TABLE_ Veh_fb_EHBOilErr 1 "EHB油压报错" 0 "正常" ;
+VAL_TABLE_ Veh_fb_EHBOilErr 1 "EHB 工作模式错误" 0 "正常" ;
+VAL_TABLE_ Veh_fb_EHBFSEBStrMtrErr 1 "EHB 电机故障" 0 "正常" ;
+VAL_TABLE_ Veh_fb_EHBEcuUnderVoltErr 1 "控制器电压低" 0 "正常" ;
+VAL_TABLE_ Veh_fb_EHBEcuOverVoltErr 1 "EHB 控制器电压高" 0 "正常" ;
+VAL_TABLE_ Veh_fb_EHBEcuOverTempErr 1 "EHB 控制器过温" 0 "正常" ;
+VAL_TABLE_ Veh_fb_EHBCANErr 1 "EHB CAN通讯故障" 0 "正常" ;
+VAL_TABLE_ Veh_fb_EHBAngleAlignmErr 1 "EHB 对中故障" 0 "正常" ;
+VAL_TABLE_ Veh_fb_EHBAngleSensorErr 1 "角度传感器故障" 0 "正常" ;
+VAL_TABLE_ Veh_fb_EHBModelErr 1 "EHB运行模式故障" 0 "正常" ;
+VAL_TABLE_ Veh_fb_EHBDomainDriveErr 1 "EHB域驱故障" 0 "正常" ;
+VAL_TABLE_ Brake_AngleSet 1 "EHB角度调整模式" 0 "关闭" ;
+VAL_TABLE_ Brake_Reset 1 "EHB置零点" 0 "关闭" ;
+VAL_TABLE_ Close_canDiag 1 "关闭CAN诊断" 0 "关闭" ;
+VAL_TABLE_ steer_reset 1 "EPS置零点" 0 "关闭" ;
+VAL_TABLE_ io_fb_upper_beam_headlamp 1 "远光灯打开" 0 "关闭" ;
+VAL_TABLE_ io_fb_speaker 1 "打开" 0 "关闭" ;
+VAL_TABLE_ io_fb_lower_beam_headlamp 1 "近光灯打开" 0 "关闭" ;
+VAL_TABLE_ io_fb_enable 1 "打开" 0 "关闭" ;
+VAL_TABLE_ io_fb_fog_lamp 1 "雾灯打开" 0 "关闭" ;
+VAL_TABLE_ io_fb_chargeEn 1 "充电接触" 0 "未接触" ;
+VAL_TABLE_ io_fb_braking_lamp 1 "制动灯打开" 0 "关闭" ;
+VAL_TABLE_ io_cmd_upper_beam_headlamp 1 "远光灯打开" 0 "关闭" ;
+VAL_TABLE_ io_cmd_braking_lamp 1 "制动灯打开" 0 "关闭" ;
+VAL_TABLE_ io_cmd_lower_beam_headlamp 1 "近光灯打开" 0 "关闭" ;
+VAL_TABLE_ io_cmd_fog_lamp 1 "雾灯打开" 0 "关闭" ;
+VAL_TABLE_ io_cmd_disCharge 1 "充电强制上电使能" 0 "关闭" ;
+VAL_TABLE_ io_fb_disCharge 1 "充电强制上电使能" 0 "关闭" ;
+VAL_TABLE_ io_fb_clearance_lamp 1 "示廓灯打开" 0 "关闭" ;
+VAL_TABLE_ io_cmd_turn_lamp 2 "开启右转向灯" 1 "开启左转向灯" 0 "关闭" ;
+VAL_TABLE_ sensor_st 1 "触发" 0 "未触发" ;
+VAL_TABLE_ ctrl_fb_mode 2 "自动驾驶和遥控器均不控制" 1 "遥控器控制模式" 0 "自动驾驶控制模式" ;
+VAL_TABLE_ io_cmd_speaker 1 "打开" 0 "关闭" ;
+VAL_TABLE_ io_cmd_clearance_lamp 1 "示廓灯打开" 0 "关闭" ;
+VAL_TABLE_ io_fb_turn_lamp 2 "开启右转向灯" 1 "开启左转向灯" 0 "关闭" ;
+VAL_TABLE_ io_cmd_enable 1 "I/O控制使能" 0 "关闭" ;
+VAL_TABLE_ ctrl_fb_gear 4 "D档" 3 "N档" 2 "R档" 1 "P档" 0 "预留" ;
+VAL_TABLE_ ctrl_cmd_gear 4 "D档" 3 "N档" 2 "R档" 1 "P档" 0 "预留" ;
+VAL_TABLE_ Veh_fb_AuxRemoteDisOnline 1 "遥控器接收机掉线" 0 "正常" ;
+VAL_TABLE_ Veh_fb_AuxRemoteClose 1 "遥控器关闭警告" 0 "正常" ;
+VAL_TABLE_ Veh_fb_AuxScram 1 "急停拍下" 0 "正常" ;
+VAL_TABLE_ Veh_fb_AUXBMSDisOnline 1 "BMS CAN通信掉线故障" 0 "正常" ;
+VAL_TABLE_ Veh_fb_DrvMCUFaultFb 38 "行走驱动器欠压限功率" 37 "行走驱动器超载限制" 36 "行走驱动器超功率限制" 35 "行走驱动电机超转速限制" 34 "行走电机超温限制" 33 "行走驱动电机超流限制" 32 "行走驱动器超温限制" 31 "行走电机编码器异常限功率" 30 "行走驱动器母线电流传感器异常" 29 "行走驱动器母线电流限功率" 28 "母线电流传感器异常限功率" 27 "电磁抱闸超流故障" 26 "电磁抱闸开路故障" 25 "行走驱动器上电故障" 24 "行走驱动器缺相故障" 23 "行走驱动器通信故障" 22 "行走驱动器预充故障" 21 "行走电机失控故障" 20 "行走驱动器母线电流传感器故障" 19 "行走驱动器相电流传感器故障" 18 "行走驱动电机堵转故障" 17 "行走驱动电机编码器故障" 16 "行走驱动器温度传感器故障" 15 "行走电机温度传感器故障" 14 "行走驱动器超温故障" 13 "行走电机超温故障" 12 "行走驱动器超载故障" 11 "行走电机超载故障" 10 "行走电机超速故障" 9 "行走驱动器母线欠压" 8 "行走驱动器母线超压" 7 "行走驱动器母线超流" 6 "行走驱动器功率模块故障" 5 "行走驱动器硬件超流" 4 "行走驱动器W相超流故障" 3 "行走驱动器V相超流故障" 2 "行走驱动器U相超流故障" 1 "行走驱动器CAN通信信号掉线" 0 "正常" ;
+VAL_TABLE_ Veh_fb_EHBOilPressSensorFault 1 "EHB油压传感器故障" 0 "正常" ;
+VAL_TABLE_ Veh_fb_EHBOilFault 1 "EHB油管故障" 0 "正常" ;
+VAL_TABLE_ Veh_fb_EHBMotorFault 1 "EHB电机故障" 0 "正常" ;
+VAL_TABLE_ Veh_fb_EHBsensorAbnomal 1 "EHB角度传感器可信度异常" 0 "正常" ;
+VAL_TABLE_ Veh_fb_EHBPowerFault 1 "EHB电源故障" 0 "正常" ;
+VAL_TABLE_ Veh_fb_EHBOT 1 "EHB ECU超温故障" 0 "正常" ;
+VAL_TABLE_ Veh_fb_EHBAnguleFault 1 "EHB角度传感器故障" 0 "正常" ;
+VAL_TABLE_ Veh_fb_EHBDisEn 1 "EHB未使能故障" 0 "正常" ;
+VAL_TABLE_ Veh_fb_EHBWorkModelFault 1 "EHB运行模式故障" 0 "正常" ;
+VAL_TABLE_ Veh_fb_EHBDisOnline 1 "EHB掉线故障" 0 "正常" ;
+VAL_TABLE_ Veh_fb_EHBecuFault 1 "EHB系统ECU故障" 0 "正常" ;
+VAL_TABLE_ Veh_fb_EPSOverCurrent 1 "EPS超流故障" 0 "正常" ;
+VAL_TABLE_ Veh_fb_EPSDisWork 1 "EPS工作模式错误" 0 "正常" ;
+VAL_TABLE_ Veh_fb_EPSWarning 1 "EPS报警故障" 0 "正常" ;
+VAL_TABLE_ Veh_fb_EPSMosfetOT 1 "EPS MOSFET过温" 0 "正常" ;
+VAL_TABLE_ Veh_fb_EPSfault 1 "EPS故障" 0 "正常" ;
+VAL_TABLE_ Veh_fb_EPSDisOnline 1 "EPS掉线故障" 0 "正常" ;
+VAL_TABLE_ Veh_fb_AutoIOCANCmd 1 "Auto IO控制CAN通信错误" 0 "正常" ;
+VAL_TABLE_ Veh_fb_AutoCANCtrlCmd 1 "Auto控制CAN通信错误" 0 "正常" ;
+VAL_TABLE_ Veh_fb_FaultLevel 3 "严重故障" 2 "中度故障" 1 "轻微故障" 0 "正常" ;
+VAL_TABLE_ bms_flag_Infor_lock_mos 1 "软件锁定 MOS" 0 "正常" ;
+VAL_TABLE_ bms_flag_Infor_ic_error 1 "前端检测 IC 错误" 0 "正常" ;
+VAL_TABLE_ bms_flag_Infor_short 1 "短路保护" 0 "正常" ;
+VAL_TABLE_ bms_flag_Infor_discharge_oc 1 "放电过流保护" 0 "正常" ;
+VAL_TABLE_ bms_flag_Infor_charge_oc 1 "充电过流保护" 0 "正常" ;
+VAL_TABLE_ bms_flag_Infor_discharge_ut 1 "放电低温保护" 0 "正常" ;
+VAL_TABLE_ bms_flag_Infor_discharge_ot 1 "放电过温保护" 0 "正常" ;
+VAL_TABLE_ bms_flag_Infor_charge_ut 1 "充电低温保护" 0 "正常" ;
+VAL_TABLE_ bms_flag_Infor_charge_ot 1 "充电过温保护" 0 "正常" ;
+VAL_TABLE_ bms_flag_Infor_uv 1 "整组欠压保护" 0 "正常" ;
+VAL_TABLE_ bms_flag_Infor_ov 1 "整组过压保护" 0 "正常" ;
+VAL_TABLE_ bms_flag_Infor_single_uv 1 "单体欠压保护" 0 "正常" ;
+VAL_TABLE_ bms_flag_Infor_single_ov 1 "单体过压保护" 0 "正常" ;
+VAL_TABLE_ bms_flag_Infor_charge_flag 1 "充电中" 0 "未充电" ;
+
+
+BO_ 2563041775 ultrasonic_2_fb: 8 Vector__XXX
+ SG_ ultrasonic_fb_02_check_bcc : 56|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ultrasonic_fb_02_alive_cnt : 52|4@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ultrasonic_fb_08 : 36|12@1+ (1,0) [0|0] "mm" Vector__XXX
+ SG_ ultrasonic_fb_07 : 24|12@1+ (1,0) [0|0] "mm" Vector__XXX
+ SG_ ultrasonic_fb_06 : 12|12@1+ (1,0) [0|0] "mm" Vector__XXX
+ SG_ ultrasonic_fb_05 : 0|12@1+ (1,0) [0|0] "mm" Vector__XXX
+
+BO_ 2563041519 ultrasonic_1_fb: 8 Vector__XXX
+ SG_ ultrasonic_fb_01_check_bcc : 56|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ultrasonic_fb_01_alive_cnt : 52|4@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ultrasonic_fb_04 : 36|12@1+ (1,0) [0|0] "mm" Vector__XXX
+ SG_ ultrasonic_fb_03 : 24|12@1+ (1,0) [0|0] "mm" Vector__XXX
+ SG_ ultrasonic_fb_02 : 12|12@1+ (1,0) [0|0] "mm" Vector__XXX
+ SG_ ultrasonic_fb_01 : 0|12@1+ (1,0) [0|0] "mm" Vector__XXX
+
+BO_ 2566914046 Sensor_reset_fb: 8 Vector__XXX
+ SG_ Brake_angle_fb : 24|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Brake_angle : 10|14@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Brake_AngleSet : 9|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Brake_Reset : 8|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Close_canDiag : 63|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ steer_reset : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2566914047 Sensor_reset: 8 Vector__XXX
+ SG_ Brake_angle : 10|14@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Brake_AngleSet : 9|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Brake_Reset : 8|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Close_canDiag : 63|1@1- (1,0) [-1|0] "" Vector__XXX
+ SG_ steer_reset : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2563042031 Veh_fb_Diag: 8 Vector__XXX
+ SG_ Veh_fb_EHBOilErr : 30|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Veh_fb_EHBStrokeErr : 29|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Veh_fb_EHBOilPreErr : 28|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Veh_fb_EHBEcuOverTempErr : 27|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Veh_fb_EHBEcuUnderVoltErr : 25|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Veh_fb_EHBCANErr : 26|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Veh_fb_EHBEcuOverVoltErr : 24|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Veh_fb_EHBPreSensorErr : 23|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Veh_fb_EHBFSEBStrMtrErr : 22|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Veh_fb_EHBAngleAlignmErr : 21|1@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Veh_fb_EHBAngleSensorErr : 20|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Veh_fb_EHBDisEn : 18|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Veh_fb_EHBModelErr : 17|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Veh_fb_EPSOverCurrent : 13|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Veh_fb_EPSDisWork : 12|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Veh_fb_EPSWarning : 11|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Veh_fb_AuxRemoteDisOnline : 47|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Veh_fb_AuxRemoteClose : 46|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Veh_fb_AUXBMSDisOnline : 44|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Veh_fb_DrvMCUFaultFb : 32|12@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Veh_fb_AutoIOCANCmd : 5|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Veh_fb_AutoCANCtrlCmd : 4|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Veh_fb_Infor_check_bcc : 56|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Veh_fb_Infor_alive_cnt : 52|4@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Veh_fb_AuxScram : 45|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Veh_fb_EHBDisOnline : 16|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Veh_fb_EHBDomainDriveErr : 19|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Veh_fb_EPSMosfetOT : 10|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Veh_fb_EPSfault : 9|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Veh_fb_EPSDisOnline : 8|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Veh_fb_FaultLevel : 0|4@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2563038447 Drive_fb_MCUEcoder: 8 VCU
+ SG_ Drive_fb_MCUEcoder_check_bcc : 56|8@1+ (1,0) [0|0] ""  AUTO
+ SG_ Drive_fb_MCUEcoder_alive_cnt : 52|4@1+ (1,0) [0|0] ""  AUTO
+ SG_ Drive_fb_MCUEcoder : 0|32@1- (1,0) [0|0] ""  AUTO
+
+BO_ 2563039983 bms_flag_Infor: 8 VCU
+ SG_ bms_flag_Infor_check_bcc : 56|8@1+ (1,0) [0|0] ""  AUTO
+ SG_ bms_flag_Infor_alive_cnt : 52|4@1+ (1,0) [0|0] ""  AUTO
+ SG_ reserved : 23|5@1+ (1,0) [0|0] ""  AUTO
+ SG_ bms_flag_Infor_low_temperature : 40|12@1- (0.1,0) [0|0] ""  AUTO
+ SG_ bms_flag_Infor_hight_temperature : 28|12@1- (0.1,0) [0|0] ""  AUTO
+ SG_ bms_flag_Infor_charge_state : 21|2@1+ (1,0) [0|3] ""  AUTO
+ SG_ bms_flag_Infor_lock_mos : 20|1@1+ (1,0) [0|0] ""  AUTO
+ SG_ bms_flag_Infor_ic_error : 19|1@1+ (1,0) [0|0] ""  AUTO
+ SG_ bms_flag_Infor_short : 18|1@1+ (1,0) [0|0] ""  AUTO
+ SG_ bms_flag_Infor_discharge_oc : 17|1@1+ (1,0) [0|1] ""  AUTO
+ SG_ bms_flag_Infor_charge_oc : 16|1@1+ (1,0) [0|0] ""  AUTO
+ SG_ bms_flag_Infor_discharge_ut : 15|1@1+ (1,0) [0|0] ""  AUTO
+ SG_ bms_flag_Infor_discharge_ot : 14|1@1+ (1,0) [0|0] ""  AUTO
+ SG_ bms_flag_Infor_charge_ut : 13|1@1+ (1,0) [0|0] ""  AUTO
+ SG_ bms_flag_Infor_charge_ot : 12|1@1+ (1,0) [0|0] ""  AUTO
+ SG_ bms_flag_Infor_uv : 11|1@1+ (1,0) [0|0] ""  AUTO
+ SG_ bms_flag_Infor_ov : 10|1@1+ (1,0) [0|0] ""  AUTO
+ SG_ bms_flag_Infor_single_uv : 9|1@1+ (1,0) [0|0] ""  AUTO
+ SG_ bms_flag_Infor_single_ov : 8|1@1+ (1,0) [0|0] ""  AUTO
+ SG_ bms_flag_Infor_soc : 0|8@1+ (1,0) [0|0] ""  AUTO
+
+BO_ 2563039727 bms_Infor: 8 VCU
+ SG_ bms_Infor_check_bcc : 56|8@1+ (1,0) [0|0] ""  AUTO
+ SG_ bms_Infor_alive_cnt : 52|4@1+ (1,0) [0|0] ""  AUTO
+ SG_ bms_Infor_remaining_capacity : 32|16@1+ (0.01,0) [0|0] ""  AUTO
+ SG_ bms_Infor_current : 16|16@1- (0.01,0) [0|0] ""  AUTO
+ SG_ bms_Infor_voltage : 0|16@1+ (0.01,0) [0|0] ""  AUTO
+
+BO_ 2563038959 odo_fb: 8 VCU
+ SG_ odo_fb_accumulative_angular : 32|32@1- (0.001,0) [0|0] ""  AUTO
+ SG_ odo_fb_accumulative_mileage : 0|32@1- (0.001,0) [0|0] ""  AUTO
+
+BO_ 2563037935 io_fb: 8 VCU
+ SG_ io_fb_ChargeEn : 41|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ io_fb_disChargeflg : 40|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ io_fb_check_bcc : 56|8@1+ (1,0) [0|0] ""  AUTO
+ SG_ io_fb_alive_cnt : 52|4@1+ (1,0) [0|0] ""  AUTO
+ SG_ io_fb_rr_drop_sensor : 37|1@1+ (1,0) [0|0] ""  AUTO
+ SG_ io_fb_rm_drop_sensor : 36|1@1+ (1,0) [0|0] ""  AUTO
+ SG_ io_fb_rl_drop_sensor : 35|1@1+ (1,0) [0|0] ""  AUTO
+ SG_ io_fb_fr_drop_sensor : 34|1@1+ (1,0) [0|0] ""  AUTO
+ SG_ io_fb_fm_drop_sensor : 33|1@1+ (1,0) [0|0] ""  AUTO
+ SG_ io_fb_fl_drop_sensor : 32|1@1+ (1,0) [0|0] ""  AUTO
+ SG_ io_fb_rr_impact_sensor : 29|1@1+ (1,0) [0|0] ""  AUTO
+ SG_ io_fb_rm_impact_sensor : 28|1@1+ (1,0) [0|0] ""  AUTO
+ SG_ io_fb_rl_impact_sensor : 27|1@1+ (1,0) [0|0] ""  AUTO
+ SG_ io_fb_fr_impact_sensor : 26|1@1+ (1,0) [0|0] ""  AUTO
+ SG_ io_fb_fm_impact_sensor : 25|1@1+ (1,0) [0|0] ""  AUTO
+ SG_ io_fb_fl_impact_sensor : 24|1@1+ (1,0) [0|0] ""  AUTO
+ SG_ io_fb_speaker : 16|1@1+ (1,0) [0|0] ""  AUTO
+ SG_ io_fb_fog_lamp : 14|1@1+ (1,0) [0|0] ""  AUTO
+ SG_ io_fb_clearance_lamp : 13|1@1+ (1,0) [0|0] ""  AUTO
+ SG_ io_fb_braking_lamp : 12|1@1+ (1,0) [0|0] ""  AUTO
+ SG_ io_fb_turn_lamp : 10|2@1+ (1,0) [0|0] ""  AUTO
+ SG_ io_fb_upper_beam_headlamp : 9|1@1+ (1,0) [0|0] ""  AUTO
+ SG_ io_fb_lower_beam_headlamp : 8|1@1+ (1,0) [0|0] ""  AUTO
+ SG_ io_fb_enable : 0|1@1+ (1,0) [0|0] ""  AUTO
+
+BO_ 2563037423 rr_wheel_fb: 8 VCU
+ SG_ rr_wheel_fb_velocity : 0|16@1- (0.001,0) [0|0] ""  AUTO
+ SG_ rr_wheel_fb_pulse : 16|32@1- (1,0) [0|0] ""  AUTO
+ SG_ rr_wheel_fb_check_bcc : 56|8@1+ (1,0) [0|0] ""  AUTO
+ SG_ rr_wheel_fb_alive_cnt : 52|4@1+ (1,0) [0|0] ""  AUTO
+
+BO_ 2563037167 lr_wheel_fb: 8 VCU
+ SG_ lr_wheel_fb_check_bcc : 56|8@1+ (1,0) [0|0] ""  AUTO
+ SG_ lr_wheel_fb_alive_cnt : 52|4@1+ (1,0) [0|0] ""  AUTO
+ SG_ lr_wheel_fb_pulse : 16|32@1- (1,0) [0|0] ""  AUTO
+ SG_ lr_wheel_fb_velocity : 0|16@1- (0.001,0) [0|0] ""  AUTO
+
+BO_ 2563035887 ctrl_fb: 8 VCU
+ SG_ ctrl_fb_check_bcc : 56|8@1+ (1,0) [0|0] ""  AUTO
+ SG_ ctrl_fb_alive_cnt : 52|4@1+ (1,0) [0|0] ""  AUTO
+ SG_ ctrl_fb_mode : 44|2@1+ (1,0) [0|0] ""  AUTO
+ SG_ ctrl_fb_Brake : 36|8@1+ (1,0) [0|0] ""  AUTO
+ SG_ ctrl_fb_steering : 20|16@1- (0.01,0) [0|0] ""  AUTO
+ SG_ ctrl_fb_velocity : 4|16@1+ (0.001,0) [0|0] ""  AUTO
+ SG_ ctrl_fb_gear : 0|4@1+ (1,0) [0|0] ""  AUTO
+
+BO_ 2563037136 io_cmd: 8 AUTO
+ SG_ io_cmd_disCharge : 40|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ io_cmd_check_bcc : 56|8@1+ (1,0) [0|0] ""  VCU
+ SG_ io_cmd_alive_cnt : 52|4@1+ (1,0) [0|0] ""  VCU
+ SG_ io_cmd_speaker : 16|1@1+ (1,0) [0|0] ""  VCU
+ SG_ io_cmd_fog_lamp : 14|1@1+ (1,0) [0|0] ""  VCU
+ SG_ io_cmd_clearance_lamp : 13|1@1+ (1,0) [0|0] ""  VCU
+ SG_ io_cmd_braking_lamp : 12|1@1+ (1,0) [0|0] ""  VCU
+ SG_ io_cmd_turn_lamp : 10|2@1+ (1,0) [0|0] ""  VCU
+ SG_ io_cmd_upper_beam_headlamp : 9|1@1+ (1,0) [0|0] ""  VCU
+ SG_ io_cmd_lower_beam_headlamp : 8|1@1+ (1,0) [0|0] ""  VCU
+ SG_ io_cmd_enable : 0|1@1+ (1,0) [0|0] ""  VCU
+
+BO_ 2563035856 ctrl_cmd: 8 AUTO
+ SG_ ctrl_cmd_check_bcc : 56|8@1+ (1,0) [0|0] ""  VCU
+ SG_ ctrl_cmd_alive_cnt : 52|4@1+ (1,0) [0|0] ""  VCU
+ SG_ ctrl_cmd_Brake : 36|8@1+ (1,0) [0|127] ""  VCU
+ SG_ ctrl_cmd_steering : 20|16@1- (0.01,0) [0|0] ""  VCU
+ SG_ ctrl_cmd_velocity : 4|16@1+ (0.001,0) [0|0] ""  VCU
+ SG_ ctrl_cmd_gear : 0|4@1+ (1,0) [0|0] ""  VCU
+
+
+
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType";
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 0;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 0;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "Cyclic","not_used","not_used","not_used","not_used","Cyclic","not_used","IfActive","NoMsgSendType";
+BA_DEF_ BU_  "NmStationAddress" HEX 0 0;
+BA_DEF_  "DBName" STRING ;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BU_  "ECU" STRING ;
+BA_DEF_ BU_  "CANoeJitterMax" INT 0 0;
+BA_DEF_ BU_  "CANoeJitterMin" INT 0 0;
+BA_DEF_ BU_  "CANoeDrift" INT 0 0;
+BA_DEF_ BU_  "CANoeStartDelay" INT 0 0;
+BA_DEF_DEF_  "GenSigSendType" "Cyclic";
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "GenMsgSendType" "NoMsgSendType";
+BA_DEF_DEF_  "NmStationAddress" 0;
+BA_DEF_DEF_  "DBName" "";
+BA_DEF_DEF_  "BusType" "CAN";
+BA_DEF_DEF_  "NodeLayerModules" "";
+BA_DEF_DEF_  "ECU" "";
+BA_DEF_DEF_  "CANoeJitterMax" 0;
+BA_DEF_DEF_  "CANoeJitterMin" 0;
+BA_DEF_DEF_  "CANoeDrift" 0;
+BA_DEF_DEF_  "CANoeStartDelay" 0;
+BA_ "DBName" "chassis_fr_can_protocol_v100_2";
+VAL_ 2566914046 Brake_AngleSet 1 "EHB角度调整模式" 0 "关闭" ;
+VAL_ 2566914046 Brake_Reset 1 "EHB置零点" 0 "关闭" ;
+VAL_ 2566914046 Close_canDiag 1 "关闭CAN诊断" 0 "关闭" ;
+VAL_ 2566914046 steer_reset 1 "EPS置零点" 0 "关闭" ;
+VAL_ 2566914047 Brake_AngleSet 1 "EHB角度调整模式" 0 "关闭" ;
+VAL_ 2566914047 Brake_Reset 1 "EHB置零点" 0 "关闭" ;
+VAL_ 2566914047 Close_canDiag 1 "关闭CAN诊断" 0 "关闭" ;
+VAL_ 2566914047 steer_reset 1 "EPS置零点" 0 "关闭" ;
+VAL_ 2563042031 Veh_fb_EHBOilErr 1 "EHB 油压报错" 0 "正常" ;
+VAL_ 2563042031 Veh_fb_EHBStrokeErr 1 "EHB行程超差" 0 "正常" ;
+VAL_ 2563042031 Veh_fb_EHBOilPreErr 1 "EHB油压系统故障" 0 "正常" ;
+VAL_ 2563042031 Veh_fb_EHBEcuOverTempErr 1 "EHB 控制器过温" 0 "正常" ;
+VAL_ 2563042031 Veh_fb_EHBEcuUnderVoltErr 1 "EHB控制器电压低" 0 "正常" ;
+VAL_ 2563042031 Veh_fb_EHBCANErr 1 "EHB CAN通讯故障" 0 "正常" ;
+VAL_ 2563042031 Veh_fb_EHBEcuOverVoltErr 1 "EHB 控制器电压高" 0 "正常" ;
+VAL_ 2563042031 Veh_fb_EHBPreSensorErr 1 "EHB油压传感器故障" 0 "正常" ;
+VAL_ 2563042031 Veh_fb_EHBFSEBStrMtrErr 1 "EHB 电机故障" 0 "正常" ;
+VAL_ 2563042031 Veh_fb_EHBAngleAlignmErr 1 "EHB 对中故障" 0 "正常" ;
+VAL_ 2563042031 Veh_fb_EHBAngleSensorErr 1 "角度传感器故障" 0 "正常" ;
+VAL_ 2563042031 Veh_fb_EHBDisEn 1 "EHB未使能故障" 0 "正常" ;
+VAL_ 2563042031 Veh_fb_EHBModelErr 1 "EHB运行模式故障" 0 "正常" ;
+VAL_ 2563042031 Veh_fb_EPSOverCurrent 1 "EPS超流故障" 0 "正常" ;
+VAL_ 2563042031 Veh_fb_EPSDisWork 1 "EPS工作模式错误" 0 "正常" ;
+VAL_ 2563042031 Veh_fb_EPSWarning 1 "EPS报警故障" 0 "正常" ;
+VAL_ 2563042031 Veh_fb_AuxRemoteDisOnline 1 "遥控器接收机掉线" 0 "正常" ;
+VAL_ 2563042031 Veh_fb_AuxRemoteClose 1 "遥控器关闭警告" 0 "正常" ;
+VAL_ 2563042031 Veh_fb_AUXBMSDisOnline 1 "BMS CAN通信掉线故障" 0 "正常" ;
+VAL_ 2563042031 Veh_fb_DrvMCUFaultFb 38 "行走驱动器欠压限功率" 37 "行走驱动器超载限制" 36 "行走驱动器超功率限制" 35 "行走驱动电机超转速限制" 34 "行走电机超温限制" 33 "行走驱动电机超流限制" 32 "行走驱动器超温限制" 31 "行走电机编码器异常限功率" 30 "行走驱动器母线电流传感器异常" 29 "行走驱动器母线电流限功率" 28 "母线电流传感器异常限功率" 27 "电磁抱闸超流故障" 26 "电磁抱闸开路故障" 25 "行走驱动器上电故障" 24 "行走驱动器缺相故障" 23 "行走驱动器通信故障" 22 "行走驱动器预充故障" 21 "行走电机失控故障" 20 "行走驱动器母线电流传感器故障" 19 "行走驱动器相电流传感器故障" 18 "行走驱动电机堵转故障" 17 "行走驱动电机编码器故障" 16 "行走驱动器温度传感器故障" 15 "行走电机温度传感器故障" 14 "行走驱动器超温故障" 13 "行走电机超温故障" 12 "行走驱动器超载故障" 11 "行走电机超载故障" 10 "行走电机超速故障" 9 "行走驱动器母线欠压" 8 "行走驱动器母线超压" 7 "行走驱动器母线超流" 6 "行走驱动器功率模块故障" 5 "行走驱动器硬件超流" 4 "行走驱动器W相超流故障" 3 "行走驱动器V相超流故障" 2 "行走驱动器U相超流故障" 1 "行走驱动器CAN通信信号掉线" 0 "正常" ;
+VAL_ 2563042031 Veh_fb_AutoIOCANCmd 1 "Auto IO控制CAN通信错误" 0 "正常" ;
+VAL_ 2563042031 Veh_fb_AutoCANCtrlCmd 1 "Auto控制CAN通信错误" 0 "正常" ;
+VAL_ 2563042031 Veh_fb_AuxScram 1 "急停拍下" 0 "正常" ;
+VAL_ 2563042031 Veh_fb_EHBDisOnline 1 "EHB掉线故障" 0 "正常" ;
+VAL_ 2563042031 Veh_fb_EHBDomainDriveErr 1 "EHB域驱故障" 0 "正常" ;
+VAL_ 2563042031 Veh_fb_EPSMosfetOT 1 "EPS MOSFET过温" 0 "正常" ;
+VAL_ 2563042031 Veh_fb_EPSfault 1 "EPS故障" 0 "正常" ;
+VAL_ 2563042031 Veh_fb_EPSDisOnline 1 "EPS掉线故障" 0 "正常" ;
+VAL_ 2563042031 Veh_fb_FaultLevel 3 "严重故障" 2 "中度故障" 1 "轻微故障" 0 "正常" ;
+VAL_ 2563039983 bms_flag_Infor_charge_state 3 "后充电桩充电" 2 "前充电桩充电" 1 "手动充电" 0 "未充电" ;
+VAL_ 2563039983 bms_flag_Infor_lock_mos 1 "软件锁定 MOS" 0 "正常" ;
+VAL_ 2563039983 bms_flag_Infor_ic_error 1 "前端检测 IC 错误" 0 "正常" ;
+VAL_ 2563039983 bms_flag_Infor_short 1 "短路保护" 0 "正常" ;
+VAL_ 2563039983 bms_flag_Infor_discharge_oc 1 "放电过流保护" 0 "正常" ;
+VAL_ 2563039983 bms_flag_Infor_charge_oc 1 "充电过流保护" 0 "正常" ;
+VAL_ 2563039983 bms_flag_Infor_discharge_ut 1 "放电低温保护" 0 "正常" ;
+VAL_ 2563039983 bms_flag_Infor_discharge_ot 1 "放电过温保护" 0 "正常" ;
+VAL_ 2563039983 bms_flag_Infor_charge_ut 1 "充电低温保护" 0 "正常" ;
+VAL_ 2563039983 bms_flag_Infor_charge_ot 1 "充电过温保护" 0 "正常" ;
+VAL_ 2563039983 bms_flag_Infor_uv 1 "整组欠压保护" 0 "正常" ;
+VAL_ 2563039983 bms_flag_Infor_ov 1 "整组过压保护" 0 "正常" ;
+VAL_ 2563039983 bms_flag_Infor_single_uv 1 "单体欠压保护" 0 "正常" ;
+VAL_ 2563039983 bms_flag_Infor_single_ov 1 "单体过压保护" 0 "正常" ;
+VAL_ 2563037935 io_fb_ChargeEn 1 "充电接触" 0 "未接触" ;
+VAL_ 2563037935 io_fb_disChargeflg 1 "充电强制上电使能" 0 "关闭" ;
+VAL_ 2563037935 io_fb_rr_drop_sensor 1 "触发" 0 "未触发" ;
+VAL_ 2563037935 io_fb_rm_drop_sensor 1 "触发" 0 "未触发" ;
+VAL_ 2563037935 io_fb_rl_drop_sensor 1 "触发" 0 "未触发" ;
+VAL_ 2563037935 io_fb_fr_drop_sensor 1 "触发" 0 "未触发" ;
+VAL_ 2563037935 io_fb_fm_drop_sensor 1 "触发" 0 "未触发" ;
+VAL_ 2563037935 io_fb_fl_drop_sensor 1 "触发" 0 "未触发" ;
+VAL_ 2563037935 io_fb_rr_impact_sensor 1 "触发" 0 "未触发" ;
+VAL_ 2563037935 io_fb_rm_impact_sensor 1 "触发" 0 "未触发" ;
+VAL_ 2563037935 io_fb_rl_impact_sensor 1 "触发" 0 "未触发" ;
+VAL_ 2563037935 io_fb_fr_impact_sensor 1 "触发" 0 "未触发" ;
+VAL_ 2563037935 io_fb_fm_impact_sensor 1 "触发" 0 "未触发" ;
+VAL_ 2563037935 io_fb_fl_impact_sensor 1 "触发" 0 "未触发" ;
+VAL_ 2563037935 io_fb_speaker 1 "打开" 0 "关闭" ;
+VAL_ 2563037935 io_fb_fog_lamp 1 "雾灯打开" 0 "关闭" ;
+VAL_ 2563037935 io_fb_clearance_lamp 1 "示廓灯打开" 0 "关闭" ;
+VAL_ 2563037935 io_fb_braking_lamp 1 "制动灯打开" 0 "关闭" ;
+VAL_ 2563037935 io_fb_turn_lamp 2 "开启右转向灯" 1 "开启左转向灯" 0 "关闭" ;
+VAL_ 2563037935 io_fb_upper_beam_headlamp 1 "远光灯打开" 0 "关闭" ;
+VAL_ 2563037935 io_fb_lower_beam_headlamp 1 "近光灯打开" 0 "关闭" ;
+VAL_ 2563037935 io_fb_enable 1 "打开" 0 "关闭" ;
+VAL_ 2563035887 ctrl_fb_mode 2 "自动驾驶和遥控器均不控制" 1 "遥控器控制模式" 0 "自动驾驶控制模式" ;
+VAL_ 2563035887 ctrl_fb_gear 4 "D档" 3 "N档" 2 "R档" 1 "P档" 0 "预留" ;
+VAL_ 2563037136 io_cmd_disCharge 1 "充电强制上电使能" 0 "关闭" ;
+VAL_ 2563037136 io_cmd_speaker 1 "打开" 0 "关闭" ;
+VAL_ 2563037136 io_cmd_fog_lamp 1 "雾灯打开" 0 "关闭" ;
+VAL_ 2563037136 io_cmd_clearance_lamp 1 "示廓灯打开" 0 "关闭" ;
+VAL_ 2563037136 io_cmd_braking_lamp 1 "制动灯打开" 0 "关闭" ;
+VAL_ 2563037136 io_cmd_turn_lamp 2 "开启右转向灯" 1 "开启左转向灯" 0 "关闭" ;
+VAL_ 2563037136 io_cmd_upper_beam_headlamp 1 "远光灯打开" 0 "关闭" ;
+VAL_ 2563037136 io_cmd_lower_beam_headlamp 1 "近光灯打开" 0 "关闭" ;
+VAL_ 2563037136 io_cmd_enable 1 "I/O控制使能" 0 "关闭" ;
+VAL_ 2563035856 ctrl_cmd_gear 4 "D档" 3 "N档" 2 "R档" 1 "P档" 0 "预留" ;
+
